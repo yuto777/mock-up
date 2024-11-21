@@ -1,0 +1,106 @@
+/* カートページの全体レイアウト */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* カートコンテナ */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* カートタイトル */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* カートアイテムリスト */
+.list-group {
+    margin-bottom: 30px;
+}
+
+/* 各カートアイテム */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 商品名 */
+.list-group-item span:first-child {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 商品の価格 */
+.list-group-item span:last-child {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* 削除ボタン */
+.list-group-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item button:hover {
+    background-color: #c0392b;
+}
+
+/* 合計金額 */
+#cart-total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* カートが空のメッセージ */
+.text-center {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+/* カートページの下部のリンク */
+.cart-actions {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cart-actions a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #3498db;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-actions a:hover {
+    background-color: #3498db;
+    color: white;
+}
